@@ -26,5 +26,6 @@ class TaskController(Process):
         self.run()
    
     def run(self):
-        task_name = self.task_queue.get()
-        self.result_queue.put(Task(tasks[task_name]))
+        while True:
+            task_name = self.task_queue.get()
+            self.result_queue.put(Task(tasks[task_name]))
