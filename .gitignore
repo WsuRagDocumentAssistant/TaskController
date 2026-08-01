@@ -1,0 +1,27 @@
+
+# visual studio
+.vs/
+*.suo
+*.user
+*.sln.docstates
+*.pyproj
+
+# enviroments
+.venv/
+__pycache__/
+*.py[cod]
+
+# Build
+build/
+dist/
+*.egg-info/
+
+# Jupyter
+.ipynb_checkpoints/
+
+# OS
+Thumbs.db
+.DS_Store
+
+# file
+test.py
