@@ -14,8 +14,6 @@ def work_regist(work_name : str):
     def workfunc(func):
         works[work_name] = func
         work_lst.append(work_name)
-        def wrapper(*args, **kwargs):
-            return func(*args, **kwargs)
-        return wrapper
+        return func()
     return workfunc
         

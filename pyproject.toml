@@ -1,5 +1,5 @@
 [project]
-name = "taskcontroller"
+name = "task-controller"
 version = "0.1.0"
 description = "work 함수를 등록하고 체인으로 실행하는 태스크 컨트롤러"
 requires-python = ">=3.11"
