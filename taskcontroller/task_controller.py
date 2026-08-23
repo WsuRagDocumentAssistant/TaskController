@@ -9,7 +9,7 @@ from multiprocessing import Process
 
 from .datas import tasks
 from .data.task import Task
-from .data.task import exception
+from .data.exception import FuncCreateException
 
 #────────────────────────────────────────────────
 
