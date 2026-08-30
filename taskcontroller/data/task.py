@@ -8,9 +8,11 @@ from .exception import FuncCreateException
 #────────────────────────────────────────────────
 
 class Task:
-    def __init__(self, work_names):
+    def __init__(self, work_names, params):
         if not work_names:
             raise FuncCreateException("연결할 work가 하나도 지정되지 않음")
+
+        self.params = params
 
         self.func_lst = []
         for name in work_names:

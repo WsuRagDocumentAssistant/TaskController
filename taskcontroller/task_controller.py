@@ -29,10 +29,10 @@ class TaskController(Process):
     def run(self):
         while True:
             try:
-                task_name = self.task_queue.get()
+                (task_name,params) = self.task_queue.get()
                 if not (task_name in tasks) :
                     raise FuncCreateException("해당 테스크가 존재하지 않음")
-                task = Task(tasks[task_name])
+                task = Task(tasks[task_name],params)
                 self.result_queue.put(task)
             except Exception as e:
                 print(e)
